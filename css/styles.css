@@ -27,9 +27,9 @@ ul {
 
 img {
   display: block;
-  /* width: 100%;
-max-width: 100%;
-height: auto; */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -287,7 +287,7 @@ a.header-link {
   /* padding-top: 120px;
   padding-bottom: 120px; */
   padding-top: 96px;
-  padding-bottom: 24px;
+  padding-bottom: 96px;
 }
 
 .strategy-div {
@@ -299,8 +299,9 @@ a.header-link {
 }
 
 .strategy-list {
-  /* display: flex; */
-  /* gap: 24px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .strategy-item {
@@ -322,7 +323,6 @@ a.header-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
 }
 
 .stratege-cont {
@@ -341,7 +341,8 @@ a.header-link {
 /*----------foto----------*/
 
 .foto {
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
+  display: none;
 }
 
 .foto-title {
@@ -367,22 +368,37 @@ a.header-link {
 
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+
+/* .team-container {
+  width: 264px;
+} */
+
 .team-title {
   color: var(--second-title-color);
   margin-bottom: 72px;
 }
 
+.team-container {
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
 }
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  width: 100%;
+
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -441,7 +457,8 @@ a.header-link {
 .team-soc-icon {
   fill: #f4f4fd;
 }
-/*            test             */
+
+/* --------- test -----------  */
 
 .test {
   padding-top: 120px;
@@ -1003,13 +1020,13 @@ a.header-link {
 
 @media screen and (min-width: 428px) {
   .container {
-    min-width: 428px;
+    width: 428px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 
   /* hero */
@@ -1025,50 +1042,51 @@ a.header-link {
 
   /* stratagy */
 
-  /* .strategy {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-
-  .strategy-div {
-  }
-
   .strategy-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
-
   .strategy-item {
-    width: calc((100% - 48px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .strategy-item-title {
+    text-align: left;
   }
 
-  .strategy-item-text {
-    color: var(--first-title-color);
+  /* -----foto ----- */
+
+  /* -----team ----- */
+
+  .team-container {
+    padding-left: 108px;
+    padding-right: 108px;
   }
 
-  .stratege-cont {
-    width: 264px;
-    height: 112px;
-
-    display: none;
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    margin-bottom: 8px;
-  } */
+
+    gap: 64px 24px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {
+  /* ----- hero ---- */
+  .container {
+    width: 1158px;
+  }
+
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
   }
 
-  .container {
-    min-width: 1158px;
-  }
   .hero-title {
     font-size: 56px;
     margin-bottom: 48px;
@@ -1076,5 +1094,60 @@ a.header-link {
   }
   .hero-container {
     padding: 188 472 188 472;
+  }
+
+  /* ----- stratagy ------ */
+
+  .strategy {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /* padding: 120 156 120 156; */
+  }
+  .strategy-div {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+  .strategy-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .strategy-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .strategy-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .strategy-item-text {
+    font-weight: 400;
+  }
+
+  .stratege-cont {
+    display: flex;
+    width: 100%;
+  }
+
+  /* -----team ----- */
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-container {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .team-item {
   }
 }
