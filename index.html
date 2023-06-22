@@ -62,90 +62,97 @@
           </ul>
         </address>
         <button type="button" class="menu-open-btn js-open-menu">
-          <svg class="menu-open-btn icon" width="32" height="32">
+          <svg class="menu-open-btn-icon" width="32" height="32">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
       </div>
       <div class="mode-menu">
-        <button type="button" class="mode-menu-close" data-modal-close>
-          <svg class="mode-menu-soc-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-modal"></use>
-          </svg>
-        </button>
-        <ul class="mode-menu-list list">
-          <li class="mode-menu-item">
-            <a class="mode-menu-link link" href="./index.html">Studio</a>
-          </li>
-          <li class="mode-menu-item">
-            <a class="mode-menu-link link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="mode-menu-item">
-            <a class="mode-menu-link link" href="">Contacts</a>
-          </li>
-        </ul>
-        <address class="mode-menu-address">
+        <div class="container">
+          <button type="button" class="modal-close">
+            <svg class="modal-soc-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
           <ul class="mode-menu-list list">
             <li class="mode-menu-item">
-              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              <a class="mode-menu-link link" href="./index.html">Studio</a>
             </li>
             <li class="mode-menu-item">
-              <a class="link item-text" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="mode-menu-link link" href="./portfolio.html"
+                >Portfolio</a
               >
             </li>
+            <li class="mode-menu-item">
+              <a class="mode-menu-link link" href="">Contacts</a>
+            </li>
           </ul>
-        </address>
-        <ul class="mob-soc-list list">
-          <li class="team-soc-item">
-            <a
-              href=""
-              class="mob-soc-link link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="mob-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-instagram" class="use"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-soc-item">
-            <a
-              href=""
-              class="mob-soc-link link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="mob-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-soc-item">
-            <a
-              href=""
-              class="mob-soc-link link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="mob-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-soc-item">
-            <a
-              href=""
-              class="mob-soc-link link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="mob-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <address class="mode-menu-address">
+            <ul class="mode-menu-list list">
+              <li class="mode-menu-item">
+                <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mode-menu-item">
+                <a class="link item-text" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list list">
+            <li class="team-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="16" height="16">
+                  <use
+                    href="./images/icons.svg#icon-instagram"
+                    class="use"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -569,7 +576,7 @@
     </main>
 
     <!-- Підвал сторінки -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-div">
           <a class="footer-logo link" href="./index.html"
@@ -654,7 +661,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
