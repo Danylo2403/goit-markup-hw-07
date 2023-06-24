@@ -142,9 +142,6 @@ img {
   display: block;
 }
 
-.header-item-email {
-  margin-right: 40px;
-}
 .header-item-tel {
 }
 
@@ -1297,6 +1294,11 @@ a.header-link {
   .container {
     width: 768px;
   }
+
+  .header-item-email {
+    margin-right: 0px;
+  }
+
   /* ------------------header------------ */
 
   .mode-menu-container {
@@ -1468,6 +1470,10 @@ a.header-link {
   /* ----- hero ---- */
   .container {
     width: 1158px;
+  }
+
+  .header-item-email {
+    margin-right: 40px;
   }
 
   .modal {
