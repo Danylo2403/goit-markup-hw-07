@@ -155,6 +155,7 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  height: 70px;
 }
 
 .header-logo {
@@ -196,6 +197,14 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   margin-left: auto;
+}
+
+/* .header-item-email {
+    margin-right: 0px;
+  }  */
+
+.header-list-address {
+  gap: 40px;
 }
 
 .header-link {
@@ -1295,9 +1304,16 @@ a.header-link {
     width: 768px;
   }
 
-  .header-item-email {
-    margin-right: 0px;
+  .item-text {
+    font-size: 12px;
+    font-family: Roboto;
+    line-height: 14px;
+    letter-spacing: 0.48px;
   }
+
+  /* .header-item-email {
+    margin-right: 0px;
+  } */
 
   /* ------------------header------------ */
 
@@ -1472,8 +1488,11 @@ a.header-link {
     width: 1158px;
   }
 
-  .header-item-email {
-    margin-right: 40px;
+  .item-text {
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 24px;
+    letter-spacing: 0.32px;
   }
 
   .modal {
