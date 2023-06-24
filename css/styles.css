@@ -118,6 +118,7 @@ img {
 }
 
 /*----------HEADER----------*/
+
 .header {
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
@@ -135,6 +136,16 @@ img {
   /* display: flex; */
   display: none;
   gap: 40px;
+}
+
+.header-list-address {
+  display: block;
+}
+
+.header-item-email {
+  margin-right: 40px;
+}
+.header-item-tel {
 }
 
 .header-navigation {
@@ -1461,6 +1472,10 @@ a.header-link {
 
   .modal {
     width: 408px;
+  }
+
+  .header-list-address {
+    display: flex;
   }
 
   .hero {
